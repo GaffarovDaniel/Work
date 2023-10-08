@@ -38,5 +38,15 @@ string[] s =  new string[n];
 
 for (int i = 0; i < n ; i++)
 {
-    Console.Write("Введите что-захотите");
+    Console.Write("Введите что-захотите: ");
+    s[i] = Console.ReadLine();
+}
+
+
+string[] result = Subarray(s, 3);
+
+// вывод массива
+for (int i = 0; i < n; i++)
+{
+    Console.Write(result[i] + " ");
 }
